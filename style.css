@@ -1,0 +1,122 @@
+*{
+  margin:0;
+  border:0;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+body{
+  height: 100vh;
+  width:100vw;
+  padding:20px 100px;
+}
+main.container{
+  width:100%;
+  height:100%;
+  display:flex;
+}
+section.first-section{
+  position:relative;
+  width:40%;
+  height: 100%;
+}
+section.first-section img{
+  width:100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+div.logo{
+  position: absolute;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  top:150px;
+  left:0;
+  width:100%;
+  height: 120px;
+  background-color: black;
+  opacity: 0.6;
+  color:white;
+}
+div.logo img{
+  width: 60px;
+  height: 80px;
+}
+div.logo p{
+  font-size: 50px;
+}
+section.second-section{
+  height: 100%;
+  width:60%;
+}
+div.text{
+  height: 30%;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 20px;
+  background-color: rgba(0,0,255,0.1);
+  font-weight: bold;
+  font-size: 17px;
+  border-bottom: 1px solid rgb(243, 242, 242);
+}
+div.text div.subtext{
+  margin-bottom: 10px;
+}
+div.form{
+  height:35%;
+  padding: 10px 20px;
+  box-shadow: 0 7px 3px 0px rgba(0,0,0,0.1);
+}
+div.form p{
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 10px;  
+}
+div.part1,div.part2,div.part3{
+   margin-bottom: 10px;
+   display:flex;
+   gap:50px;
+}
+div.part1 div, div.part2 div, div.part3 div{
+  display:flex;
+  flex-direction: column;
+}
+div.part1 div label, div.part2 div label, div.part3 div label{
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+div.part1 div input, div.part2 div input, div.part3 div input{
+  padding:5px;
+  border:0.7px solid grey;
+  border-radius: 3px;
+}
+
+div.part1 div input:focus, div.part2 div input:focus, div.part3 div input:focus{
+  outline:none;
+  border:0.7px solid lightblue;
+  box-shadow: 0px 0px 2px 0px lightblue;
+}
+div.button{
+  background: linear-gradient(rgba(0,0,255,0.1),rgba(255,255,255));
+  border-top: 1px solid white;
+  height:25%;
+  padding:20px 20px;
+}
+div.button button{
+  border:none;
+  padding:10px 40px;
+  color:white;
+  background-color: #596d48;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+#para{
+  color:red;
+  font-size:10px;
+}
+#para.active{
+  color:green;
+  font-size:10px;
+}
